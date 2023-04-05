@@ -23,6 +23,7 @@ const (
 type OrdersDataService interface {
 	Create(ctx context.Context, purchaseOrder interface{}) (*mongo.InsertOneResult, error)
 	Update(ctx context.Context, purchaseOrder interface{}) (int64, error)
+
 	GetAll(ctx context.Context) (interface{}, error)
 	GetById(ctx context.Context, id string) (interface{}, error)
 	DeleteById(ctx context.Context, id string) (int64, error)
