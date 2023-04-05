@@ -22,7 +22,6 @@ func NewOrdersController(svc db.OrdersDataService) *OrdersController {
 	}
 	return ic
 }
-
 // Post  godoc
 // @Summary      Creates or Updates an order
 // @Description  Used to either create or update an order
